@@ -1,0 +1,186 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header and Nav */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-name {
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+#header-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#nav-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+a.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+a.nav-link:hover {
+    color: #007BFF;
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px; /* Adjusted to account for fixed navbar */
+}
+
+h2 {
+    color: #333;
+}
+
+#benefits h2 {
+    margin-top: 20px;
+}
+
+#video {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin: 20px 0;
+}
+
+/* Pricing Section */
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.pricing-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits{
+    margin-left:100
+}
+#del, #del1{margin-left:150}
+#port, #port1{margin-left:300}
+
+
+.pricing-box h2 {
+    color: #333;
+}
+
+.pricing-box .price {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+.pricing-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.select-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.select-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Form */
+form {
+    margin: 20px 0;color: #333;
+    font-size: 1.5em;display:flex;justify-content:center;margin-bottom:0;padding-bottom:0;
+}
+#grab{
+    align-item:center;text-align:center;display:flex;justify-content:center;margin-bottom:0;padding-bottom:0;font-size:1.5em; font-weight:bold;
+}
+
+#email {
+    padding: 10px;
+    width: 70%;
+    font-size: 1em;
+}
+
+#submit {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
